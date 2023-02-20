@@ -1,7 +1,7 @@
 <template>
     <div>
         <ul>
-            <li v-for="color of ['dark', 'light', 'system']" :key="color" :class="{
+            <li v-for="color of ['light', 'dark']" :key="color" :class="{
                 preferred: !$colorMode.unknown && color === $colorMode.preference,
                 selected: !$colorMode.unknown && color === $colorMode.value
             }">
@@ -10,7 +10,6 @@
         </ul>
     </div>
 </template>
-
 <style scoped>
 ul {
     list-style: none;
@@ -33,7 +32,7 @@ p {
     position: relative;
     top: 0px;
     cursor: pointer;
-    padding: 7px;
+    padding: 5px;
     background-color: var(--bg-secondary);
     border: 2px solid var(--border-color);
     margin: 0;
@@ -42,12 +41,12 @@ p {
 }
 
 .feather:hover {
-    top: -2px;
+    top: -3px;
 }
 
 .preferred .feather {
     border-color: var(--color-primary);
-    top: -1px;
+    top: -3px;
 }
 
 .selected .feather {

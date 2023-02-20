@@ -1,13 +1,5 @@
 <!-- home component page -->
-<template><!-- <Header /> -->
-
-    <!-- display main -->
-<!-- <br>
-    <main>
-        <ContentDoc />
-    </main>
-                     -->
-    <br>
+<template>
     <figure class="md:flex">
         <img class="md:w-60 md:h-60 mx-auto" src="https://aminehy.github.io/assets/images/photo_linkedin_2020.png" alt="" />
         <div class="pt-6 md:p-8 text-center md:text-left space-y-4">
@@ -23,23 +15,12 @@
     <br>
     <br>
     <Routes />
-
-    <!-- display footer -->
-<!-- <Footer /> --></template>
+</template>
 
 <script setup>
 
 </script>
 
-<style scoped>
-h2 {
-    font-size: 36px;
-    margin-bottom: 20px;
-}
-
-p {
-    margin-bottom: 10px;
-}
-</style>
+<style scoped></style>
 
 

@@ -10,7 +10,7 @@ export default defineNuxtConfig({
         'asciidoctor'
 
     ],
-
+    css: ['@/assets/main.css'],
     content: {
         highlight:
             { theme: "github-light" }, // https://content.nuxtjs.org/api/configuration
