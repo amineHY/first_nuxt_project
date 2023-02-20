@@ -29,11 +29,13 @@ export default defineNuxtConfig({
                 code: 'en',
                 iso: 'en-US',
                 name: 'English',
+                file: 'en-US.js'
             },
             {
                 code: 'fr',
                 iso: 'fr-FR',
                 name: 'Français',
+                file: 'fr-FR.js'
             },
         ],
         defaultLocale: 'fr',
@@ -44,21 +46,21 @@ export default defineNuxtConfig({
                     home: 'Home',
                     about: 'About',
                     contact: 'Contact',
-                    publication: 'Publication',
-                    blog: 'Blog',
+                    publication: 'PublicationEN',
+                    blog: 'BlogEN',
                 },
                 fr: {
                     home: 'Accueil',
                     about: 'À propos',
                     contact: 'Contact',
-                    publication: 'Publication',
-                    blog: 'Blog',
+                    publication: 'PublicationFR',
+                    blog: 'BlogFR',
                 },
             },
         },
         strategy: 'prefix_except_default',
-        // lazy: true,
-        // langDir: 'locales/',
+        lazy: true,
+        langDir: "lang"
     },
 
     app: {

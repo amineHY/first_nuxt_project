@@ -2,6 +2,18 @@
 <template>
     <div>
         <h2>Bienvenu Root</h2>
+        <NuxtLink :to="localePath('/')">{{ $t("home") }}</NuxtLink>
+        <NuxtLink :to="localePath('/about')">{{ $t("about") }}</NuxtLink>
+        <NuxtLink :to="localePath('blog')">{{ $t("blog") }}</NuxtLink>
+        <NuxtLink :to="localePath('publication')">{{
+            $t("publication")
+        }}</NuxtLink>
+
+        <nuxt-link :to="localePath('index')">{{ $t('home') }}</nuxt-link>
+        <nuxt-link :to="localePath('/')">{{ $t('home') }}</nuxt-link>
+        <nuxt-link :to="localePath('index', 'en')">Homepage in English</nuxt-link>
+
+
 
         <figure class="md:flex rounded-xl p-8 md:p-0 dark:bg-slate-800">
             <img class="md:w-60 md:h-60 mx-auto" src="https://aminehy.github.io/assets/images/photo_linkedin_2020.png"
@@ -34,6 +46,8 @@
 // definePageMeta({
 //     colorMode: "light",
 // });
+const localePath = useLocalePath();
+
 </script>
 
 <style scoped>
