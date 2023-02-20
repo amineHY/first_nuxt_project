@@ -8,7 +8,7 @@
     <nuxt-link to="/routes">Routes</nuxt-link>
 
     <!-- Language switcher support -->
-    <LangSwitcher />
+    <LangSwitcherV2 />
 </template>
 
 <script setup>
