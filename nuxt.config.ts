@@ -6,9 +6,11 @@ export default defineNuxtConfig({
         '@nuxtjs/i18n',
         '@nuxtjs/color-mode',
         '@nuxt/content',
-        'nuxt-icon'
+        'nuxt-icon',
+        'asciidoctor'
 
     ],
+
     content: {
         // https://content.nuxtjs.org/api/configuration
     },

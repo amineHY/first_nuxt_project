@@ -1,18 +1,6 @@
 <!-- home component page -->
 <template>
     <div>
-    <!-- 
-        <div>
-            <form>
-                <select v-model="locale">
-                    <option value="en">en</option>
-                    <option value="fr">fr</option>
-                </select>
-                <p>{{ $t("welcome") }}</p>
-            </form>
-                    </div> -->
-
-
 
         <figure class="md:flex rounded-xl p-8 md:p-0 dark:bg-slate-800">
             <img class="md:w-60 md:h-60 mx-auto" src="https://aminehy.github.io/assets/images/photo_linkedin_2020.png"
@@ -33,25 +21,8 @@
 </template>
 
 <script setup>
-// definePageMeta({
-//     colorMode: "light",
 
-import LangSwitcher from "~~/components/LangSwitcher.vue";
-
-// });
-
-const localePath = useLocalePath();
-const switchLocalePath = useSwitchLocalePath();
-
-const { locale } = useI18n();
 const localeRoute = useLocaleRoute()
-
-function onClick() {
-    const route = localeRoute({ name: "blog" });
-    if (route) {
-        return navigateTo(route.fullPath);
-    }
-}
 </script>
 
 <style scoped>

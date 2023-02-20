@@ -5,5 +5,6 @@
   "publication": "PublicationEN",
   "blog": "BlogEN",
   "welcome": "Welcome",
-  "description": "Hello, my name is Amine Hadj-Youcef. I provide consulting and support for business teams, defining their needs and translating them into technical solutions in Data Science and Machine Learning. I specialize in data collection, analysis, and exploration, as well as the design of analytical dashboards and the production of ML solutions on the cloud. My expertise also extends to project management, with a focus on tracking, direction, and meeting project goals and deadlines."
+  "description": "Hello, my name is Amine Hadj-Youcef. I provide consulting and support for business teams, defining their needs and translating them into technical solutions in Data Science and Machine Learning. I specialize in data collection, analysis, and exploration, as well as the design of analytical dashboards and the production of ML solutions on the cloud. My expertise also extends to project management, with a focus on tracking, direction, and meeting project goals and deadlines.",
+  "filepath": "content/index_en.vue"
 }
