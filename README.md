@@ -64,3 +64,11 @@ https://tailwindcomponents.com/cheatsheet/
 mkdir components
 
 nuxt will auto import components of this folder
+
+## i18n
+
+https://v8.i18n.nuxtjs.org/guide/lang-switcher
+
+## icon
+
+https://nuxt.com/modules/icon
