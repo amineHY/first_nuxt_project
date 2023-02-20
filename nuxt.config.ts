@@ -38,7 +38,7 @@ export default defineNuxtConfig({
                 file: 'fr-FR.js'
             },
         ],
-        strategy: 'prefix_except_default',
+        // strategy: 'prefix_except_default',
         defaultLocale: 'fr',
         vueI18n: {
             legacy: false,
