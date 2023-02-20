@@ -12,7 +12,8 @@ export default defineNuxtConfig({
     ],
 
     content: {
-        // https://content.nuxtjs.org/api/configuration
+        highlight:
+            { theme: "github-light" }, // https://content.nuxtjs.org/api/configuration
     },
     colorMode: {
         preference: 'dark', // default value of $colorMode.preference

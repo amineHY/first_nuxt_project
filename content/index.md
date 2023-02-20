@@ -7,4 +7,7 @@ description: "meta description of the page"
 
 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem amet illo suscipit porro, doloremque magnam minima quas eius ducimus nulla nesciunt quo vel dignissimos cupiditate voluptas! Temporibus tempora sapiente rerum?
 
-<!-- Content of the page -->
+```python
+import numpy as np
+
+```
