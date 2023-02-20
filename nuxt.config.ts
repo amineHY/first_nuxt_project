@@ -38,8 +38,10 @@ export default defineNuxtConfig({
                 file: 'fr-FR.js'
             },
         ],
+        strategy: 'prefix_except_default',
         defaultLocale: 'fr',
         vueI18n: {
+            legacy: false,
             fallbackLocale: 'fr',
             messages: {
                 en: {
@@ -48,6 +50,9 @@ export default defineNuxtConfig({
                     contact: 'Contact',
                     publication: 'PublicationEN',
                     blog: 'BlogEN',
+                    welcome: 'Welcome',
+                    description: "Hello, my name is Amine Hadj-Youcef. I provide consulting and support for business teams, defining their needs and translating them into technical solutions in Data Science and Machine Learning. I specialize in data collection, analysis, and exploration, as well as the design of analytical dashboards and the production of ML solutions on the cloud. My expertise also extends to project management, with a focus on tracking, direction, and meeting project goals and deadlines."
+
                 },
                 fr: {
                     home: 'Accueil',
@@ -55,12 +60,14 @@ export default defineNuxtConfig({
                     contact: 'Contact',
                     publication: 'PublicationFR',
                     blog: 'BlogFR',
+                    welcome: 'Bienvenu',
+                    description: "Bonjour, je m'appelle <strong>Amine Hadj-Youcef</strong>. Je fournis des services de consultation, mentorat et formation, pour les d'entreprise en définissant leurs besoins métiers et en les traduisant en solutions techniques en Data Science et intelligence Artificielle.                    Je suis spécialisé dans la collecte, l'analyse et l'exploration de données, ainsi que dans la conception de tableaux de bord analytiques                     et la production de solutions de ML sur le cloud.Mon expertise s'étend également à la gestion de projet, en mettant l'accent sur le suivi, la direction et l'atteinte des objectifs et des délais du projet."
                 },
             },
         },
-        strategy: 'prefix_except_default',
-        lazy: true,
-        langDir: "lang"
+
+        // lazy: true,
+        // langDir: "lang/",
     },
 
     app: {

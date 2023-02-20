@@ -9,7 +9,9 @@
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos, ad suscipit eum cum et sit. Tempora fugit
             blanditiis esse aspernatur eum alias. Suscipit possimus explicabo, obcaecati cupiditate tenetur libero ipsum.
         </p>
-
+        <div>
+            {{ $t("about") }}
+        </div>
 
 
     </div>

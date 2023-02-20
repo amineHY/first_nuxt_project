@@ -6,11 +6,15 @@
         $t("publication")
     }}</NuxtLink>
     <nuxt-link to="/routes">Routes</nuxt-link>
+
+    <!-- Language switcher support -->
+    <LangSwitcher />
 </template>
 
 <script setup>
+
 const localePath = useLocalePath();
-console.log(localePath)
+// console.log('localPath ', localePath)
 </script>
 
 <style  scoped></style>

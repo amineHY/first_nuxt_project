@@ -8,8 +8,6 @@
       <div class="flex gap-4">
         <NavbarMenu />
 
-        <!-- Language switcher support -->
-        <LangSwitcher />
 
         <!-- Theme color support -->
         <ColorModePicker />

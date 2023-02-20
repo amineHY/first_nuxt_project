@@ -1,17 +1,16 @@
 <!-- home component page -->
 <template>
     <div>
-        <h2>Bienvenu Root</h2>
-        <NuxtLink :to="localePath('/')">{{ $t("home") }}</NuxtLink>
-        <NuxtLink :to="localePath('/about')">{{ $t("about") }}</NuxtLink>
-        <NuxtLink :to="localePath('blog')">{{ $t("blog") }}</NuxtLink>
-        <NuxtLink :to="localePath('publication')">{{
-            $t("publication")
-        }}</NuxtLink>
-
-        <nuxt-link :to="localePath('index')">{{ $t('home') }}</nuxt-link>
-        <nuxt-link :to="localePath('/')">{{ $t('home') }}</nuxt-link>
-        <nuxt-link :to="localePath('index', 'en')">Homepage in English</nuxt-link>
+    <!-- 
+        <div>
+            <form>
+                <select v-model="locale">
+                    <option value="en">en</option>
+                    <option value="fr">fr</option>
+                </select>
+                <p>{{ $t("welcome") }}</p>
+            </form>
+            </div> -->
 
 
 
@@ -20,16 +19,7 @@
                 alt="" />
             <div class="pt-6 md:p-8 text-center md:text-left space-y-4">
                 <p class="text-lg font-medium">
-                    “Bonjour, je m'appelle <strong>Amine Hadj-Youcef</strong>. Je fournis
-                    des services de consultation, mentorat et formation, pour les
-                    d'entreprise en définissant leurs besoins métiers et en les traduisant
-                    en solutions techniques en Data Science et intelligence Artificielle.
-                    Je suis spécialisé dans la collecte, l'analyse et l'exploration de
-                    données, ainsi que dans la conception de tableaux de bord analytiques
-                    et la production de solutions de ML sur le cloud. Mon expertise
-                    s'étend également à la gestion de projet, en mettant l'accent sur le
-                    suivi, la direction et l'atteinte des objectifs et des délais du
-                    projet.”
+                    {{ $t("description") }}
                 </p>
                 <figcaption class="font-medium">
                     <div class="text-sky-500 dark:text-sky-400">Amine Hadj-Youcef</div>
@@ -45,9 +35,23 @@
 <script setup>
 // definePageMeta({
 //     colorMode: "light",
-// });
-const localePath = useLocalePath();
 
+import LangSwitcher from "~~/components/LangSwitcher.vue";
+
+// });
+
+const localePath = useLocalePath();
+const switchLocalePath = useSwitchLocalePath();
+
+const { locale } = useI18n();
+const localeRoute = useLocaleRoute()
+
+function onClick() {
+    const route = localeRoute({ name: "blog" });
+    if (route) {
+        return navigateTo(route.fullPath);
+    }
+}
 </script>
 
 <style scoped>

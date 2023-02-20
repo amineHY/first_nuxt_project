@@ -5,5 +5,6 @@ export default async (context, locale) => {
     contact: "Contact",
     publication: "Publication",
     blog: "Blog",
+    welcome: "Welcome",
   });
 };
