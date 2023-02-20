@@ -1,5 +1,5 @@
 <template>
-    <div class="flex justify-center">
+    <div class="text-left">
         <h2>Available Routes:</h2>
         <ul class=" text-left mx-auto">
             <li v-for="route in $router.options.routes" :key="route.path">
@@ -13,4 +13,4 @@
 
 </script>
 
-<style lang="scss" scoped></style>
+<style scoped></style>

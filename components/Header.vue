@@ -8,9 +8,24 @@
       <div class="flex gap-4">
         <NavbarMenu />
 
+        <!-- Language switcher support -->
+        <LangSwitcherV2 />
 
         <!-- Theme color support -->
         <ColorModePicker />
+
+        <!-- Social media icons -->
+        <!-- <div class="flex gap-4">
+          <NuxtLink to="mailto:hadjyoucef.amine@gmail.com" aria-label="Email">
+            <Icon name="ic:baseline-email" />
+          </NuxtLink>
+          <NuxtLink to="https://github.com/aminehy" aria-label="GitHub">
+            <Icon name="uil:github" />
+          </NuxtLink>
+          <NuxtLink to="https://www.linkedin.com/in/aminehy/" aria-label="LinkedIn">
+            <Icon name="uil:linkedin" />
+          </NuxtLink>
+        </div> -->
       </div>
     </nav>
   </header>
@@ -18,17 +33,34 @@
 
 <script setup>
 const localePath = useLocalePath();
-const { t } = useI18n()
+const { t } = useI18n();
 </script>
 
-<style>
-body {
-  background-color: #fff;
-  color: rgba(0, 0, 0, 0.8);
+<style scoped>
+.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 
-.dark-mode body {
-  background-color: #091a28;
-  color: #ebf4f1;
+.w-full {
+  width: 100%;
+}
+
+.gap-4>*+* {
+  margin-left: 1rem;
+}
+
+/* Media query for smaller devices */
+@media (max-width: 640px) {
+  .gap-4 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .gap-4>*+* {
+    margin-left: 0;
+    margin-top: 1rem;
+  }
 }
 </style>

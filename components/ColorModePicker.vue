@@ -1,7 +1,7 @@
 <template>
     <div>
         <ul>
-            <li v-for="color of ['light', 'dark']" :key="color" :class="{
+            <li v-for="color of ['dark', 'light', 'system']" :key="color" :class="{
                 preferred: !$colorMode.unknown && color === $colorMode.preference,
                 selected: !$colorMode.unknown && color === $colorMode.value
             }">
@@ -42,12 +42,12 @@ p {
 }
 
 .feather:hover {
-    top: -3px;
+    top: -2px;
 }
 
 .preferred .feather {
     border-color: var(--color-primary);
-    top: -3px;
+    top: -1px;
 }
 
 .selected .feather {
