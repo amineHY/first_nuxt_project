@@ -1,19 +1,17 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-    components: { global: true, dirs: ['~/components'] },
+    components: { global: true, dirs: ["~/components"] },
     modules: [
-        '@nuxtjs/tailwindcss',
-        '@nuxtjs/i18n',
-        '@nuxtjs/color-mode',
-        '@nuxt/content',
-        'nuxt-icon',
-        'asciidoctor'
-
+        "@nuxtjs/tailwindcss",
+        "@nuxtjs/i18n",
+        "@nuxtjs/color-mode",
+        "@nuxt/content",
+        "nuxt-icon",
+        "asciidoctor",
     ],
-    css: ['@/assets/main.css'],
+    css: ["@/assets/main.css"],
     content: {
-        highlight:
-            { theme: "github-light" }, // https://content.nuxtjs.org/api/configuration
+        highlight: { theme: "github-light" }, // https://content.nuxtjs.org/api/configuration
     },
     colorMode: {
         preference: 'dark', // default value of $colorMode.preference
@@ -27,30 +25,50 @@ export default defineNuxtConfig({
         // classSuffix: '',
 
     },
+    // colorMode: {
+    //     preference: "light", // default value of $colorMode.preference
+    //     fallback: "light", // fallback value if not system preference found
+    //     classSuffix: "",
+    //     storageKey: "nuxt-color-mode",
+    //     modes: {
+    //         dark: {
+    //             "--bg-primary": "#121212",
+    //             "--bg-secondary": "#1c1c1c",
+    //             "--text-color": "#d8d8d8",
+    //         },
+    //         light: {
+    //             "--bg-primary": "#ffffff",
+    //             "--bg-secondary": "#f9f9f9",
+    //             "--text-color": "#333333",
+    //         },
+    //     },
+    // },
     i18n: {
         locales: [
             {
-                code: 'en',
-                iso: 'en-US',
-                name: 'English',
-                file: 'en-US.json',
-                flag: '🇫🇷'
+                code: "en",
+                iso: "en-US",
+                name: "English",
+                file: "en-US.json",
+                flag: "🇫🇷",
+                icon: "twemoji:flag-france",
             },
             {
-                code: 'fr',
-                iso: 'fr-FR',
-                name: 'Français',
-                file: 'fr-FR.json',
-                flag: '🇺🇸'
+                code: "fr",
+                iso: "fr-FR",
+                name: "Français",
+                file: "fr-FR.json",
+                flag: "🇺🇸",
+                icon: "twemoji:flag-united-states",
             },
         ],
         // strategy: 'prefix_except_default',
-        defaultLocale: 'fr',
+        defaultLocale: "fr",
         lazy: true,
         langDir: "lang/",
         vueI18n: {
             legacy: false,
-            fallbackLocale: 'fr',
+            fallbackLocale: "fr",
             // messages: {
             //     en: {
             //         home: 'Home',
@@ -73,21 +91,24 @@ export default defineNuxtConfig({
             //     },
             // },
         },
-
-
     },
 
     app: {
         head: {
-            title: 'Amine Hadj-Youcef',
+            title: "Amine Hadj-Youcef",
             meta: [
-                { name: 'description', content: 'page personnel de Amine HADJ-YOUCEF, Lead Data Scientist, Paris' }
+                {
+                    name: "description",
+                    content:
+                        "page personnel de Amine HADJ-YOUCEF, Lead Data Scientist, Paris",
+                },
             ],
             link: [
                 {
-                    rel: 'stylesheet', href: "https://fonts.googleapis.com/icon?family=Material+Icons"
-                }
-            ]
-        }
-    }
+                    rel: "stylesheet",
+                    href: "https://fonts.googleapis.com/icon?family=Material+Icons",
+                },
+            ],
+        },
+    },
 });

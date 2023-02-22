@@ -1,13 +1,17 @@
 <template>
-  <header class="shadow-2xl font-sans">
-    <nav class="container mx-auto p-4 flex justify-between">
-      <!-- Navbar right side -->
-      <NuxtLink to="/" class="font-bold">Amine</NuxtLink>
-
+  <header class="font-sans">
+    <nav class="container mx-auto p-4 flex justify-between items-center">
       <!-- Navbar left side -->
-      <div class="flex gap-4">
-        <NavbarMenu />
+      <NuxtLink to="/" class="font-bold text-lg">
+        <Icon name="ic:round-home" />
+      </NuxtLink>
 
+      <!-- Navbar right side -->
+      <div class="">
+        <NavbarMenu />
+      </div>
+
+      <div class="flex justify-between">
         <!-- Language switcher support -->
         <LangSwitcherV2 />
 

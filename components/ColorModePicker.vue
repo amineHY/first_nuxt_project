@@ -10,6 +10,7 @@
         </ul>
     </div>
 </template>
+
 <style scoped>
 ul {
     list-style: none;

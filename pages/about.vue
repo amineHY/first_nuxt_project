@@ -21,7 +21,7 @@
 </script>
 
 <style scoped>
-h2 {
+/* h2 {
     font-size: 36px;
     margin-bottom: 20px;
 }
@@ -29,5 +29,5 @@ h2 {
 p {
 
     margin-bottom: 10px;
-}
+} */
 </style>
