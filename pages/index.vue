@@ -1,29 +1,31 @@
 <!-- home component page -->
 <template>
     <div>
-        <figure class="md:flex">
-            <img class="md:w-60 md:h-60 mx-auto" src="https://aminehy.github.io/assets/images/photo_linkedin_2020.png"
-                alt="" />
-            <div class="pt-6 md:p-8 text-center md:text-left space-y-4">
-                <p class="text-lg font-sans">{{ $t("description") }}</p>
-                <figcaption class="font-medium">
-                    <div class="">Amine Hadj-Youcef</div>
-                    <div class="">Lead Data Scientist</div>
-                </figcaption>
+
+
+        <div
+            style="margin: auto; width: 200px; height: 200px; border-radius: 50%; overflow: hidden;  box-shadow: 1px 1px 62px 11px #00dc82ff;">
+            <img src="https://aminehy.github.io/assets/images/photo_linkedin_2020.png" alt=""
+                style="max-width: 100%; height: 100%; object-fit: cover" />
+        </div>
+        <br>
+
+        <div style="margin: auto; width:50%; border-top-width: 4px; border-top-style: solid; border-top-color: #00dc82ff;"
+            class="pt-6 md:p-8 space-y-4">
+            <p class="text-lg font-sans">{{ $t("description") }}</p>
+            <div class="font-medium">
+                <div class="">Amine Hadj-Youcef. PhD</div>
+                <div class="">Lead Data Scientist</div>
             </div>
-        </figure>
+        </div>
 
         <!-- display routes -->
-        <br>
-        <br>
-        <Routes />
+        <br />
+
+        <!-- <Routes /> -->
     </div>
 </template>
 
-<script setup>
-
-</script>
+<script setup></script>
 
 <style scoped></style>
-
-

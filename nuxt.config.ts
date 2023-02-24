@@ -8,6 +8,7 @@ export default defineNuxtConfig({
         "@nuxt/content",
         "nuxt-icon",
         "asciidoctor",
+        '@nuxt/image-edge',
     ],
     css: ["@/assets/main.css"],
     content: {
@@ -22,8 +23,6 @@ export default defineNuxtConfig({
         classPrefix: '',
         classSuffix: '-mode',
         storageKey: 'nuxt-color-mode'
-        // classSuffix: '',
-
     },
     // colorMode: {
     //     preference: "light", // default value of $colorMode.preference

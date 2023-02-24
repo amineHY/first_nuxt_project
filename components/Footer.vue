@@ -1,7 +1,7 @@
 <template>
     <footer class="fixed bottom-0 w-full ">
         <div class="container mx-auto p-4 flex justify-between">
-            <div>&copy; 2023 by AmineHY</div>
+            <div>&copy; 2023 by Amine HY</div>
             <div class="flex gap-4">
                 <NuxtLink to="mailto:hadjyoucef.amine@gmail.com">
                     <Icon name="ic:baseline-email" />

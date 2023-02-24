@@ -3,7 +3,7 @@
     <nav class="container mx-auto p-4 flex justify-between items-center">
       <!-- Navbar left side -->
       <NuxtLink to="/" class="font-bold text-lg">
-        <Icon name="ic:round-home" />
+        أمين <!-- <Icon name="ic:round-home" /> -->
       </NuxtLink>
 
       <!-- Navbar right side -->
