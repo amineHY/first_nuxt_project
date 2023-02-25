@@ -1,25 +1,29 @@
 <!-- home component page -->
 <template>
-    <div>
-
+    <section>
         <div
-            style="margin: auto; width: 200px; height: 200px; border-radius: 50%; overflow: hidden;  box-shadow: 1px 1px 62px 11px #00dc82ff;">
-            <img :src="profile_picture" alt="" style="max-width: 100%; height: 100%; object-fit: cover" />
-        </div>
-        <br>
+            class="container flex flex-col mx-auto justify-center items-center p-5 mt-10 space-y-1 md:space-y-0 md:flex-row">
+            <!-- left item -->
+            <div
+                style="margin: auto; width: 350px; height: 350px; border-radius: 50%; overflow: hidden;  box-shadow: 1px 1px 62px 11px #00dc82ff;">
+                <img :src="profile_picture" alt="" style="max-width: 100%; height: 100%; object-fit: cover" />
+            </div>
 
-        <div style="margin: auto; width:80%; border-top-width: 4px; border-top-style: solid; border-top-color: #00dc82ff;"
-            class="pt-6 md:p-8 space-y-4">
-            <p class="text-lg font-sans">{{ $t("description") }}</p>
-            <div class="font-medium">
-                <div class="">{{ full_name }}</div>
-                <div class="">{{ job_title }}</div>
+            <!-- right item : image-->
+            <div class="flex flex-col pt-6 md:p-8 space-y-5 mx-auto" style="width: 70%">
+                <p class="text-lg font-sans">{{ $t("description") }}</p>
+                <div class="font-medium">
+                    <div class="">{{ full_name }}</div>
+                    <div class="">{{ job_title }}</div>
+                </div>
             </div>
         </div>
 
-        <!-- display routes -->
-        <!-- <Routes /> -->
-    </div>
+
+    </section>
+
+    <!-- display routes -->
+    <!-- <Routes /> -->
 </template>
 
 <script setup lang="ts">
