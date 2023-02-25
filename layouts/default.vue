@@ -13,7 +13,7 @@
 <script setup></script>
 
 <style scoped>
-body {
+/* body {
     background-image: linear-gradient(to bottom right, #87f1ff, #78ffd6) !important;
-}
+} */
 </style>

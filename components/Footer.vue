@@ -25,3 +25,10 @@
 <script setup lang="ts">
 const copyright = "2023 by Amine HY"
 </script>
+
+
+<style scoped>
+.nav-link a {
+    @apply font-bold text-lg;
+}
+</style>

@@ -1,20 +1,26 @@
 <!-- home component page -->
 <template>
     <section>
+
         <div
-            class="container flex flex-col mx-auto justify-center items-center p-5 mt-10 space-y-1 md:space-y-0 md:flex-row">
+            class="container flex flex-col mx-auto justify-center items-center p-2 mt-1 space-y-1 md:space-y-0 md:flex-row">
             <!-- left item -->
-            <div
-                style="margin: auto; width: 350px; height: 350px; border-radius: 50%; overflow: hidden;  box-shadow: 1px 1px 62px 11px #00dc82ff;">
-                <img :src="profile_picture" alt="" style="max-width: 100%; height: 100%; object-fit: cover" />
+            <div class="w-2/3 mx-auto md:w-2/6">
+                <img :src="profile_picture" alt=""
+                    style="margin: auto; width: 350px; height: 350px; border-radius:
+                                                            50%; overflow: hidden; box-shadow: 1px 1px 62px 11px #00dc82ff;" />
             </div>
 
-            <!-- right item : image-->
-            <div class="flex flex-col pt-6 md:p-8 space-y-5 mx-auto" style="width: 70%">
-                <p class="text-lg font-sans">{{ $t("description") }}</p>
-                <div class="font-medium">
-                    <div class="">{{ full_name }}</div>
-                    <div class="">{{ job_title }}</div>
+            <!-- right item -->
+            <div class="flex flex-col pt-0  space-y-7 mx-auto w-2/3 md:p-8 md:w-4/6 md:flex-col">
+                <p class="text-xl font-sans">
+                    {{ $t("description") }}
+                </p>
+                <div>
+                    <p class="font-bold text-2xl">
+                        {{ full_name }}
+                    </p>
+                    <p class="text-xl">{{ job_title }}</p>
                 </div>
             </div>
         </div>
