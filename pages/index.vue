@@ -18,8 +18,6 @@
         </div>
 
         <!-- display routes -->
-        <br />
-
         <!-- <Routes /> -->
     </div>
 </template>

@@ -3,7 +3,7 @@
         <div class="flex justify-between items-center">
 
             <!-- Navbar left side -->
-            <div class="nav-link">
+            <div class="nav-link hover:bg-slate-700">
                 <NuxtLink to="/">
                     أمين <!-- <Icon name="ic:round-home" /> -->
                 </NuxtLink>
@@ -12,11 +12,11 @@
             <!-- Navbar center side -->
             <div class="hidden md:flex space-x-6">
 
-                <div class=" hover:text-red-500 nav-link">
+                <div class="  nav-link">
                     <NuxtLink :to="localePath('/', 'fr')">{{ $t("home") }}</NuxtLink>
                 </div>
 
-                <div class=" hover:text-red-500 nav-link">
+                <div class=" nav-link">
                     <NuxtLink :to="localePath('/about')">{{ $t("about") }}</NuxtLink>
                 </div>
 
