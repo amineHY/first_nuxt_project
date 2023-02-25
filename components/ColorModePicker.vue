@@ -1,15 +1,22 @@
 <template>
     <div>
         <ul>
-            <li v-for="color of ['light', 'dark']" :key="color" :class="{
-                preferred: !$colorMode.unknown && color === $colorMode.preference,
-                selected: !$colorMode.unknown && color === $colorMode.value
+            <li v-for="theme of ['light', 'dark']" :key="theme" :class="{
+                preferred: !$colorMode.unknown && theme === $colorMode.preference,
+                selected: !$colorMode.unknown && theme === $colorMode.value
             }">
-                <component :is="`icon-${color}`" @click="$colorMode.preference = color" />
+                <component :is="`icon-${theme}`" @click="$colorMode.preference = theme" />
             </li>
         </ul>
     </div>
 </template>
+
+<!-- <script setup lang="ts">
+type Themes = 'light' | 'dark' | 'system';
+// const setColorTheme = (newTheme: Themes) => {
+//     useColorMode().preference = newTheme
+// }
+</script> -->
 
 <style scoped>
 ul {

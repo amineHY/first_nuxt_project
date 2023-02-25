@@ -2,7 +2,6 @@
 <template>
     <div>
 
-
         <div
             style="margin: auto; width: 200px; height: 200px; border-radius: 50%; overflow: hidden;  box-shadow: 1px 1px 62px 11px #00dc82ff;">
             <img src="https://aminehy.github.io/assets/images/photo_linkedin_2020.png" alt=""
@@ -26,6 +25,8 @@
     </div>
 </template>
 
-<script setup></script>
+<script setup>
+
+</script>
 
 <style scoped></style>

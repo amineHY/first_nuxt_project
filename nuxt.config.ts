@@ -8,8 +8,7 @@ export default defineNuxtConfig({
         "@nuxt/content",
         "nuxt-icon",
         "asciidoctor",
-        '@nuxt/image-edge',
-    ],
+        '@nuxt/image-edge',],
     css: ["@/assets/main.css"],
     content: {
         highlight: { theme: "github-light" }, // https://content.nuxtjs.org/api/configuration
@@ -21,27 +20,10 @@ export default defineNuxtConfig({
         globalName: '__NUXT_COLOR_MODE__',
         componentName: 'ColorScheme',
         classPrefix: '',
+        storageKey: 'nuxt-color-mode',
         classSuffix: '-mode',
-        storageKey: 'nuxt-color-mode'
     },
-    // colorMode: {
-    //     preference: "light", // default value of $colorMode.preference
-    //     fallback: "light", // fallback value if not system preference found
-    //     classSuffix: "",
-    //     storageKey: "nuxt-color-mode",
-    //     modes: {
-    //         dark: {
-    //             "--bg-primary": "#121212",
-    //             "--bg-secondary": "#1c1c1c",
-    //             "--text-color": "#d8d8d8",
-    //         },
-    //         light: {
-    //             "--bg-primary": "#ffffff",
-    //             "--bg-secondary": "#f9f9f9",
-    //             "--text-color": "#333333",
-    //         },
-    //     },
-    // },
+
     i18n: {
         locales: [
             {

@@ -1,15 +1,16 @@
 <template>
     <footer class="fixed bottom-0 w-full ">
         <div class="container mx-auto p-4 flex justify-between">
-            <div>&copy; 2023 by Amine HY</div>
+            <div>&copy; {{ copyright }} </div>
             <div class="flex gap-4">
-                <NuxtLink to="mailto:hadjyoucef.amine@gmail.com">
+                <NuxtLink :to="email_address">
                     <Icon name="ic:baseline-email" />
                 </NuxtLink>
-                <NuxtLink to="https://github.com/aminehy">
+
+                <NuxtLink :to="github_url">
                     <Icon name="uil:github" />
                 </NuxtLink>
-                <NuxtLink to="https://www.linkedin.com/in/aminehy/">
+                <NuxtLink :to="linkedin_url">
                     <Icon name="uil:linkedin" />
                 </NuxtLink>
             </div>
@@ -17,5 +18,9 @@
     </footer>
 </template>
 
-<script setup>
+<script setup lang="ts">
+const copyright = "2023 by Amine HY"
+const github_url = "https://github.com/amineHY";
+const linkedin_url = "https://www.linkedin.com/in/aminehy/";
+const email_address = "mailto:hadjyoucef.amine@gmail.com";
 </script>
