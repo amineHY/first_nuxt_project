@@ -8,7 +8,7 @@
         </div>
         <br>
 
-        <div style="margin: auto; width:50%; border-top-width: 4px; border-top-style: solid; border-top-color: #00dc82ff;"
+        <div style="margin: auto; width:80%; border-top-width: 4px; border-top-style: solid; border-top-color: #00dc82ff;"
             class="pt-6 md:p-8 space-y-4">
             <p class="text-lg font-sans">{{ $t("description") }}</p>
             <div class="font-medium">
