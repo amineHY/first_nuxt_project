@@ -11,13 +11,6 @@
     </div>
 </template>
 
-<!-- <script setup lang="ts">
-type Themes = 'light' | 'dark' | 'system';
-// const setColorTheme = (newTheme: Themes) => {
-//     useColorMode().preference = newTheme
-// }
-</script> -->
-
 <style scoped>
 ul {
     list-style: none;

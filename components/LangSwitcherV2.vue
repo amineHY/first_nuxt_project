@@ -1,5 +1,5 @@
 <template>
-    <div class="flex items-center">
+    <div>
         <NuxtLink v-for="locale in availableLocales" :key="locale.code" :to="switchLocalePath(locale.code)">
             <Icon :name="locale.icon" />
         </NuxtLink>
