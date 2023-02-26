@@ -1,38 +1,42 @@
 <!-- home component page -->
 <template>
     <section>
-        <h1 class="flex text-5xl font-bold justify-center mx-16 px-32 pb-10">{{ $t("welcome") }}</h1>
+        <h1 class="text-5xl font-bold  text-center mx-auto pb-10 ">
+            {{
+                $t("welcome") }}
+        </h1>
 
         <div
             class="container flex flex-col mx-auto justify-center items-center p-5 mt-0 space-y-1 md:space-y-0 md:flex-row">
             <!-- left item -->
-            <div class="aspect-auto mx-auto md:aspect-w-[50px] md:aspect-h-[50px]">
+            <div class="flex">
                 <img :src="profile_picture" alt=""
-                    style="margin: auto; width: 350px; height: 350px; border-radius: 50%; overflow: hidden; box-shadow: 1px 1px 62px 11px #00dc82ff;" />
+                    style="margin: auto; max-width: 350px; max-height: 350px; width: auto; height: auto; border-radius: 50%; overflow: hidden; box-shadow: 1px 1px 62px 11px #00dc82ff;" />
             </div>
 
             <!-- right item -->
-            <div class="flex flex-col pt-0  space-y-7 mx-auto w-2/3 md:p-8 md:w-4/6 md:flex-col">
-                <p class="flex text-xl font-sans">
-                    {{ $t("description") }}
-                </p>
+            <div
+                class="flex flex-col pt-10  mx-auto w-fit justify-center text-left items-center space-y-7   mt-10 md:p-8 md:w-4/6 md:flex-row">
+
                 <div>
-                    <p class="font-bold text-2xl">
+                    <p class="flex text-xl font-sans">
+                        {{ $t("description") }}
+                    </p>
+                    <p class="font-bold text-2xl mt-10">
                         {{ full_name }}
                     </p>
                     <p class="text-xl">{{ job_title }}</p>
                 </div>
             </div>
         </div>
-
-
     </section>
 
     <section>
-
+        <h1 class="font-bold text-center text-4xl mt-10 mx-auto mb-0 pb-0">{{ $t('trust_us') }}</h1>
         <div
-            class="container flex flex-col mt-20 mx-auto justify-center items-center md:flex-col bg-slate-00 md:w-2/3 md:justify-center md:items-center">
-            <div class="flex flex-col  mx-auto space-x-10 space-y-10 items-center justify-center mt-10 md:flex-row">
+            class="container flex flex-col mt-5 mx-auto justify-center items-center md:flex-col bg-slate-00 md:w-2/3 md:justify-center md:items-center">
+            <div
+                class="flex flex-col   mx-auto space-x-0 space-y-10 items-center justify-center mt-10 md:flex-row md:space-x-20 md:items-center md:justify-center">
                 <img class="image" src="https://upload.wikimedia.org/wikipedia/fr/e/ec/Logo_SNCF_R%C3%A9seau_2015.svg"
                     alt="Logo SNCF R%C3%A9seau 2015">
                 <img class="image"
@@ -43,7 +47,8 @@
                 <img src="https://www.ias.u-psud.fr/sites/default/files/logoias.jpg" alt="logoias" class="image">
             </div>
 
-            <div class="flex flex-col  mx-auto space-x-10 space-y-5 items-center justify-center mt-10 md:flex-row">
+            <div
+                class="flex flex-col  mx-auto  space-x-0 space-y-5 items-center justify-center mt-10 md:flex-row md:space-x-10">
                 <span class="image aspect-auto"><img
                         src="https://upload.wikimedia.org/wikipedia/commons/3/3d/Logo_Universit%C3%A9_Paris-Saclay.svg"
                         alt="Logo Universit%C3%A9 Paris Saclay" class="image"></span>
@@ -65,7 +70,7 @@
                         alt="ESI Logo BG e1627076162748" class="image"></span>
             </div>
             <div
-                class="flex flex-col  mx-auto space-x-10 space-y-10 items-center justify-center mt-5 md:flex-row md:space-x-10 md:items-center">
+                class="flex flex-col  mx-auto  space-x-0 space-y-5 items-center justify-center mt-10 md:flex-row md:space-x-10">
                 <span class="image aspect-auto"><img
                         src="https://yt3.ggpht.com/a/AGF-l791eNhIhlL3lHjcx0_P1QCf7JlmKzS37uwJbg=s900-c-k-c0xffffffff-no-rj-mo"
                         alt="AGF l791eNhIhlL3lHjcx0 P1QCf7JlmKzS37uwJbg=s900 c k c0xffffffff no rj mo" width="85"></span>
