@@ -5,7 +5,7 @@
             <!-- Navbar left side -->
             <div class="nav-link hover:bg-slate-700">
                 <NuxtLink to="/">
-                    أمين <!-- <Icon name="ic:round-home" /> -->
+                    <Icon name="ic:round-home" />
                 </NuxtLink>
             </div>
 

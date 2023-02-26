@@ -1,7 +1,7 @@
 <template>
     <div>
         <ul>
-            <li v-for="theme of ['light', 'dark']" :key="theme" :class="{
+            <li v-for="theme of ['light', 'dark', 'system']" :key="theme" :class="{
                 preferred: !$colorMode.unknown && theme === $colorMode.preference,
                 selected: !$colorMode.unknown && theme === $colorMode.value
             }">
